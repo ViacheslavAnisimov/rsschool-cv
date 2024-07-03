@@ -34,7 +34,7 @@
           <ul class="ul">
             <li>Phone: <a href="tel:+11111111111">+1&#8209;111&#8209;111&#8209;1111</a></li>
             <li>E-mail: <a href="mailto:vvv@gmail.com">vvv@gmail.com</a></li>
-            <li>Diskord: Viacheslav@vsv-an</li>
+            <li>Discord: Viacheslav@vsv-an</li>
             <li>GitHub: <a href="https://github.com/vsv-an" target="_blank">Viacheslav Anisimov</a></li>
           </ul>
         </div>
@@ -71,10 +71,10 @@
           <h2 id="courses">Courses</h2>
           <ul class="ul">
             <li>
-              <a href="http://learn.javascript.ru/">learn.javascript.ru</a>
+              <a href="http://learn.javascript.ru/" target="_blank">learn.javascript.ru</a>
             </li>
             <li>
-              <a href="http://rs.school/js/">The Rolling Scopes School
+              <a href="https://rs.school/courses/javascript-ru" target="_blank">The Rolling Scopes School
                 course</a>
             </li>
           </ul>
@@ -83,10 +83,10 @@
           <h2 id="projects">Projects</h2>
           <ul class="ul">
             <li>
-              <a href="https://vsv-an.github.io/rsschool-cv/">rsschool-cv</a>
+              <a href="https://vsv-an.github.io/rsschool-cv/" target="_blank">rsschool-cv</a>
             </li>
             <li>
-              <a href="https://vsv-an.github.io/to-do-list/">ToDo List</a>
+              <a href="https://vsv-an.github.io/to-do-list/" target="_blank">ToDo List</a>
             </li>
           </ul>
         </div>
@@ -94,7 +94,7 @@
           <h2 id="education">Education</h2>
           <ul class="ul">
             <li>
-              <a href="https://rs.school/js/">RS School</a>
+              <a href="https://rs.school/courses/javascript-ru" target="_blank">RS School</a>
             </li>
           </ul>
         </div>
@@ -129,9 +129,9 @@
             <img class="github-logo" src="./github-mark.svg" alt="github-logo">
           </a>
         </div>
-        <p>&copy; 2023 by Viacheslav Anisimov</p>
+        <p>&copy; <span id="year"></span> by Viacheslav Anisimov</p>
         <div>
-          <a href="https://rs.school/js/" target="blank">
+          <a href="https://rs.school/courses/javascript-ru" target="blank">
             <img class="rss-logo" src="./rs_school_js.svg" alt="rs_school_js_logo">
           </a>
         </div>
@@ -139,6 +139,10 @@
 
     </footer>
   </div>
+  <script>
+    document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))
+
+  </script>
 </body>
 
 </html>
